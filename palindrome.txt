@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class YourClassNameHere {
+    public static void main(String[] args) {
+      
+      // pseudocode
+      // get string and convert to arr
+      // create dummy array and fill with backwards
+      // test if arr1 is equal to arr2
+      
+      String test = "baab";
+      String[] testToArr = test.split("");
+      String[] reverseArr = new String[testToArr.length];
+      
+      for (int i = testToArr.length-1, j = 0; j < testToArr.length; i--, j++) {
+        reverseArr[i] = testToArr[j];
+      }
+      
+      if (Arrays.equals(testToArr, reverseArr)) {
+        System.out.print(true);
+      } else {
+        System.out.print(false);
+      }
+        
+    }
+}
